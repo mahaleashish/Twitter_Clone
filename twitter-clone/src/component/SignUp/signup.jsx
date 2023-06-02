@@ -3,7 +3,7 @@ import {useState} from 'react';
 import {useNavigate} from 'react-router';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import style from './SignUp.module.css'
+import styles from './SignUp.module.css'
 import Button from '@mui/material/Button';
 
 export default function Signup() {
@@ -48,8 +48,8 @@ export default function Signup() {
   };
   return (
     <>
-    <div className={style.body}>
-    <Box className={style.signuppage}
+    <div className={styles.body}>
+    <Box className={styles.signuppage}
       component="form"
       sx={{
         '& .MuiTextField-root': { m: 1, width: '25ch' },
@@ -58,10 +58,10 @@ export default function Signup() {
     >
 
       <h1>Create your account</h1>
-      <div className={style.signup1}>
+      <div className={styles.signup1}>
 
       <TextField 
-          className={style.textfield}
+          className={styles.textfield}
           required
           id="filled-required"
           label="Name"
@@ -73,12 +73,12 @@ export default function Signup() {
               ...input,
               [e.target.name]: e.target.value,})
             }
-            style={{
+            styles={{
             width:'70%'
           }}
       />
         <TextField
-          className={style.textfield}
+          className={styles.textfield}
           required
           id="filled-required"
           label="Email"
@@ -90,13 +90,13 @@ export default function Signup() {
               ...input,
               [e.target.name]: e.target.value,})
             }
-          style={{
+          styles={{
             width:'70%'
           }}
         />
         {/* <h6><a >Use Phone instead</a></h6> */}
         <TextField
-          className={style.textfield}
+          className={styles.textfield}
           required
           id="filled-disabled"
           label="Phone"
@@ -109,13 +109,13 @@ export default function Signup() {
               [e.target.name]: e.target.value,})
             }
           variant="filled"
-          style={{
+          styles={{
             width:'70%',
           }}
         />
 
         <TextField 
-          className={style.textfield}
+          className={styles.textfield}
           required
           id="filled-required"
           label="DOB"
@@ -128,13 +128,13 @@ export default function Signup() {
               ...input,
               [e.target.name]: e.target.value,})
             }
-            style={{
+            styles={{
             width:'70%'
           }}
         />
         
         <TextField
-          className={style.textfield}
+          className={styles.textfield}
           required
           helperText="Atleast 8 characters."
           id="filled-password-input"
@@ -150,13 +150,13 @@ export default function Signup() {
          
           // ref={password}
           variant="filled"
-          style={{
+          styles={{
             width:'70%'
           }}
         />
         </div>
         <Button 
-        className={style.btnSignup} 
+        className={styles.btnSignup} 
         onClick={handleData}
         variant='contained'
         style={{

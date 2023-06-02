@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import style from './trending.module.css';
+import styles from './trending.module.css';
 import data from '../../../../trending.json'
 
 function Trending() {
@@ -11,18 +11,18 @@ function Trending() {
     },[])
 
   return (
-    <div className={style.trendingcontainer}>
+    <div className={styles.trendingcontainer}>
       <h2 style={{margin:"5%"}}>What’s happening</h2>
         {
           trending.map((item)=>
             
-            <div className={style.data}>
+            <div className={styles.data}>
               <p style={{fontSize:"20px", marginLeft:"15px",fontWeight:"bold"}}>{item.hashtag}</p>
               <p style={{marginLeft:"15px"}}><span>{item.count}  </span>Tweets</p>
             </div>
            )
         } 
-        <h3 className={style.lastbtn}>Show more</h3>
+        <h3 className={styles.lastbtn}>Show more</h3>
       
     </div>
   )

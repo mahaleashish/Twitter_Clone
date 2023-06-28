@@ -29,7 +29,8 @@ h1{
     width: 100%;
     flex-direction: column;
     align-items: center;
-    margin: 30px 0px;
+    justify-content: center;
+    margin: 60px 0px;
 }
 h6{
     color: rgb(37, 37, 240);
@@ -41,13 +42,15 @@ h6{
     
 
 }
-/* .textfield{
+.textfield{
    display: flex;
    border: 1px solid lightgray;
-} */
+   
+}
+
 .btnSignup{
     width: 70%;
     height: 10%;
     display: flex;
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
